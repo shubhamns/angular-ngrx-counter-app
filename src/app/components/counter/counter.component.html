@@ -1,0 +1,20 @@
+<div class="container text-center">
+  <div class="my-4">
+    <h3>Current Count: {{ count$ | async }}</h3>
+  </div>
+
+  <div class="row my-4">
+    <div class="col-md-1 offset-md-5">
+      <button class="btn btn-primary" (click)="increment()">Increment</button>
+    </div>
+    <div class="col-md-1">
+      <button class="btn btn-primary" (click)="decrement()">Decrement</button>
+    </div>
+  </div>
+
+  <div class="row my-4">
+    <div class="col-md-2 offset-md-5">
+      <button class="btn btn-warning" (click)="reset()">Reset Counter</button>
+    </div>
+  </div>
+</div>
